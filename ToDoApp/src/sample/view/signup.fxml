@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SignupController">
+   <children>
+      <AnchorPane prefHeight="78.0" prefWidth="700.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Label layoutX="311.0" layoutY="17.0" text="2DO" textFill="#fcfafa">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="78.0" prefHeight="34.0" prefWidth="700.0" style="-fx-background-color: #9a0007;">
+         <children>
+            <Label layoutX="316.0" layoutY="4.0" text="Sign up" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="signupFirstName" layoutX="233.0" layoutY="122.0" prefHeight="24.0" prefWidth="234.0" promptText="First Name">
+         <effect>
+            <ColorAdjust brightness="-0.12" contrast="0.02" hue="0.9" saturation="-0.05" />
+         </effect>
+      </TextField>
+      <TextField fx:id="signupLastName" layoutX="233.0" layoutY="159.0" prefHeight="24.0" prefWidth="234.0" promptText="Last Name">
+         <effect>
+            <ColorAdjust brightness="-0.12" contrast="0.02" hue="0.9" saturation="-0.05" />
+         </effect>
+      </TextField>
+      <TextField fx:id="signupUsername" layoutX="233.0" layoutY="195.0" prefHeight="24.0" prefWidth="234.0" promptText="Username">
+         <effect>
+            <ColorAdjust brightness="-0.12" contrast="0.02" hue="0.9" saturation="-0.05" />
+         </effect>
+      </TextField>
+      <JFXRadioButton fx:id="signupMaleRadioButton" layoutX="267.0" layoutY="237.0" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="Group1" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="signupFemaleRadioButton" layoutX="350.0" layoutY="237.0" text="Female" toggleGroup="$Group1" />
+      <PasswordField fx:id="signupPassword" layoutX="233.0" layoutY="272.0" prefHeight="24.0" prefWidth="234.0" promptText="Password">
+         <effect>
+            <ColorAdjust brightness="-0.17" contrast="0.09" hue="-0.13" saturation="-0.37" />
+         </effect>
+      </PasswordField>
+      <JFXButton fx:id="signupButton" layoutX="243.0" layoutY="318.0" prefHeight="34.0" prefWidth="214.0" style="-fx-background-color: #424242;" text="Sign up" textFill="#f5efef" />
+   </children>
+</AnchorPane>

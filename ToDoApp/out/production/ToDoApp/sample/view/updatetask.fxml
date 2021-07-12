@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UpdateTaskController">
+   <children>
+      <AnchorPane prefHeight="83.0" prefWidth="550.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Label alignment="CENTER" layoutX="236.0" layoutY="20.0" text="2DO" textFill="#fcfafa">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="updateTaskButton" layoutX="218.0" layoutY="293.0" prefHeight="61.0" prefWidth="130.0" style="-fx-background-color: #d32f2f;" text="Update" textFill="#f8f5f5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="updateTaskField" layoutX="136.0" layoutY="143.0" prefHeight="34.0" prefWidth="294.0" promptText="Task">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="updateDescriptionField" layoutX="136.0" layoutY="210.0" prefHeight="34.0" prefWidth="294.0" promptText="Description">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+   </children>
+</AnchorPane>

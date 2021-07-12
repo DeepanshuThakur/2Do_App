@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ListController">
+    <children>
+        <AnchorPane prefHeight="83.0" prefWidth="700.0" style="-fx-background-color: #d32f2f;">
+            <children>
+                <Label alignment="CENTER" layoutX="307.0" layoutY="19.0" text="2DO" textFill="#fcfafa">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+            <ImageView fx:id="listRefreshImgView" blendMode="SRC_ATOP" fitHeight="34.0" fitWidth="28.0" layoutX="648.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/refresh_icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="591.0" layoutY="42.0" text="Refresh" textFill="#fffdfd" />
+            </children>
+        </AnchorPane>
+        <JFXListView fx:id="listTask" layoutX="318.0" layoutY="90.0" prefHeight="304.0" prefWidth="376.0" style="-fx-background-color: #ffffff;">
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXListView>
+        <AnchorPane layoutY="90.0" prefHeight="304.0" prefWidth="294.0">
+            <children>
+                <TextField fx:id="listTaskField" layoutX="26.0" layoutY="40.0" prefHeight="34.0" prefWidth="242.0" promptText="Task">
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </TextField>
+                <TextField fx:id="listDescriptionField" layoutX="26.0" layoutY="102.0" prefHeight="34.0" prefWidth="242.0" promptText="Description">
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </TextField>
+                <JFXButton fx:id="listSaveTaskButton" layoutX="71.0" layoutY="167.0" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: #d32f2f;" text="Save Task" textFill="#f5efef">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

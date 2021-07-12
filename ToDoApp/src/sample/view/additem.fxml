@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AdditemController">
+   <children>
+      <AnchorPane prefHeight="98.0" prefWidth="700.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Label layoutX="311.0" layoutY="27.0" text="2DO" textFill="#fcfafa">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="notTaskLabel" layoutX="247.0" layoutY="200.0" text="No tasks for today yet!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="addButton" fitHeight="59.0" fitWidth="100.0" layoutX="321.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/add_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
